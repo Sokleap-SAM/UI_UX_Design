@@ -1,0 +1,121 @@
+.text-on-image1{
+    position: absolute;
+    color: white;
+    font-size: 64px;
+    top: 400px;
+    left: 250px;
+}
+.text-on-image2{
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    top: 500px;
+    left: 250px;
+}
+.small-text{
+    color: goldenrod;
+    font-size: 16px;
+}
+.future{
+    background-color: goldenrod;
+}
+.card-wrapper{
+    display: flex;
+    justify-content:space-around;
+    position: absolute;
+    top: 1200px;
+    gap: 100px
+}
+.image-1{
+    width: 1240px;
+}
+.image-2{
+    width: 1240px;
+    height: 350px;
+}
+.image-align{
+    text-align: center;
+}
+.line1{
+    background-color: goldenrod;
+    width: 133px;
+    height:12px;
+    margin: auto;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.universities-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    gap: 30px;
+    margin-top: 50px;
+
+}
+.universities-img{
+    height: 100px;
+    width: 300px;
+}
+.see-all-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-width: 2px;
+    border-color: goldenrod;
+}
+.courses-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    gap: 30px;
+    margin-top: 50px;
+
+}
+.end{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 200px 50px 200px;
+}
+.footer{
+    background-color: #3D3D5C;
+    width: 1220px;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.endheader{
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.subendheader{
+    width:795px;
+    text-align: center;
+}
+.br{
+    background-color: white;
+    width: 1000px;
+    height: 1px;
+    position: relative;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
