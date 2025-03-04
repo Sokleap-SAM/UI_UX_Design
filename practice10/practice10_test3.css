@@ -1,0 +1,1302 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    line-height: 1.5;
+  }
+  
+  .home-page {
+    background-color: rgba(17, 17, 17, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Top Navigation Bar */
+  .top-navbar {
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.6px solid #333;
+    background-color: #111;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    padding: 16px 100px;
+    flex-direction: column;
+    overflow: hidden;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    top: 0;
+    right: 0;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    align-self: stretch;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family:
+      "Room",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.1;
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  
+  .logo-text-light {
+    font-weight: 400;
+  }
+  
+  .logo-text-bold {
+    font-weight: 900;
+  }
+  
+  .nav-links {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: start;
+    gap: 40px 56px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.6;
+    justify-content: start;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-cta {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+    color: #212121;
+    font-weight: 500;
+    line-height: 1;
+    justify-content: center;
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  
+  .cta-button {
+    align-self: stretch;
+    border-radius: 4px;
+    background-color: rgba(170, 185, 30, 1);
+    padding: 17px 48px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 960px;
+    width: 100%;
+    padding: 516px 80px 196px;
+    align-items: center;
+  }
+  
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .hero-content {
+    position: relative;
+    display: flex;
+    margin-bottom: -39px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .hero-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 88px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    line-height: 110px;
+    justify-content: start;
+  }
+  
+  .hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+  
+  .hero-indicators {
+    display: flex;
+    margin-top: 20px;
+    align-items: start;
+    gap: 4px;
+    justify-content: start;
+  }
+  
+  .indicator {
+    border-radius: 999999px;
+    background-color: #bdbdbd;
+    display: flex;
+    width: 8px;
+    flex-shrink: 0;
+    height: 8px;
+  }
+  
+  .indicator.active {
+    background-color: rgba(170, 185, 30, 1);
+    width: 24px;
+  }
+  
+  /* Episodes Section */
+  .episodes-section {
+    background-color: rgba(245, 245, 245, 1);
+    z-index: 0;
+    display: flex;
+    margin-top: 28px;
+    width: 100%;
+    padding: 120px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+  }
+  
+  .section-header {
+    align-self: start;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 64px;
+    color: #333;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+  
+  .section-divider {
+    background-color: #9c9797;
+    display: flex;
+    min-height: 2px;
+    width: 160px;
+    max-width: 100%;
+  }
+  
+  .section-divider.dark {
+    background-color: #333;
+  }
+  
+  .section-title {
+    margin-top: 24px;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+  
+  .episodes-container {
+    display: flex;
+    margin-top: 56px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .episodes-list {
+    display: flex;
+    max-width: 100%;
+    width: 1200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .episode {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 88px 40px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: center;
+  }
+  
+  .featured-episode {
+    border-radius: 24px;
+    background-color: rgba(170, 185, 30, 1);
+  }
+  
+  .regular-episode {
+    background-color: rgba(245, 245, 245, 1);
+  }
+  
+  .episode-column {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 32px;
+    overflow: hidden;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  .episode-image-container {
+    border-radius: 4px;
+    align-self: stretch;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    width: 320px;
+  }
+  
+  .episode-image-container.bordered {
+    border: 1px solid rgba(100, 100, 100, 0.56);
+  }
+  
+  .episode-image {
+    aspect-ratio: 1.33;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+  
+  .episode-content {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  
+  .episode-text {
+    width: 100%;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+  }
+  
+  .episode-title {
+    color: rgba(18, 18, 18, 1);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  
+  .episode-description {
+    color: #4f4f4f;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 8px;
+  }
+  
+  .featured-episode .episode-title {
+    color: rgba(18, 18, 18, 1);
+  }
+  
+  .featured-episode .episode-description {
+    color: #4f4f4f;
+  }
+  
+  .episode-platforms {
+    align-self: start;
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+    gap: 33px;
+    justify-content: start;
+  }
+  
+  .platform-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 32px;
+    border-radius: 1000000000px;
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+  }
+  
+  .platform-icon:first-child {
+    aspect-ratio: 1.39;
+    width: 36px;
+    border-radius: 999px;
+  }
+  
+  .load-more-button {
+    align-self: stretch;
+    border-radius: 4px;
+    background-color: rgba(170, 185, 30, 1);
+    margin-top: 40px;
+    padding: 18px 40px;
+    gap: 8px;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    color: #212121;
+    font-weight: 500;
+    line-height: 1;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Platforms Section */
+  .platforms-section {
+    background-color: rgba(170, 185, 30, 1);
+    display: flex;
+    width: 100%;
+    padding: 109px 80px 204px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: start;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    color: #212121;
+    line-height: 1.2;
+  }
+  
+  .platforms-container {
+    display: flex;
+    margin-bottom: -41px;
+    width: 100%;
+    max-width: 1060px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .platforms-grid {
+    margin-top: 96px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .platforms-row {
+    display: flex;
+    align-items: center;
+    gap: 40px 120px;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  .platforms-row:last-child {
+    margin-top: 96px;
+  }
+  
+  .platform-item {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    gap: 24px;
+    white-space: nowrap;
+    justify-content: start;
+  }
+  
+  .platform-logo {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 56px;
+    border-radius: 2000000000px;
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+  }
+  
+  .platform-name {
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 188px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  /* Hosts Section */
+  .hosts-section {
+    background-color: rgba(17, 17, 17, 1);
+    display: flex;
+    width: 100%;
+    padding: 161px 80px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: stretch;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    justify-content: center;
+  }
+  
+  .hosts-container {
+    display: flex;
+    margin-bottom: -37px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .hosts-section .section-header {
+    align-self: start;
+    font-size: 64px;
+    color: #fff;
+    font-weight: 900;
+    white-space: nowrap;
+    line-height: 1.2;
+  }
+  
+  .hosts-grid {
+    display: flex;
+    margin-top: 95px;
+    align-items: start;
+    gap: 24px;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  .host-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    aspect-ratio: 0.686;
+    min-width: 240px;
+    padding: 479px 16px 18px;
+    overflow: hidden;
+    align-items: start;
+    width: 384px;
+  }
+  
+  .host-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .host-info {
+    position: relative;
+  }
+  
+  .host-name {
+    color: rgba(170, 185, 30, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .host-role {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+  
+  .host-nested {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 0.686;
+    width: 100%;
+    padding: 479px 16px 18px;
+    align-items: start;
+  }
+  
+  /* Testimonial Section */
+  .testimonial-section {
+    background-color: rgba(170, 185, 30, 1);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: stretch;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+  }
+  
+  .testimonial-container {
+    background-color: rgba(170, 185, 30, 1);
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 800px;
+    width: 100%;
+    padding: 482px 4px 25px;
+    align-items: start;
+  }
+  
+  .testimonial-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .testimonial-quote {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 986px;
+    padding: 40px 80px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+  
+  .testimonial-text {
+    color: rgba(220, 219, 219, 1);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  
+  .testimonial-author {
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 24px;
+    font-style: normal;
+  }
+  
+  .testimonial-background {
+    aspect-ratio: 1.69;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    align-self: center;
+    max-width: 1280px;
+  }
+  
+  /* Guests Section */
+  .guests-section {
+    background-color: rgba(17, 17, 17, 1);
+    display: flex;
+    width: 100%;
+    padding: 168px 80px;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+  }
+  
+  .guests-container {
+    margin-right: -696px;
+    margin-bottom: -30px;
+    width: 100%;
+  }
+  
+  .guests-section .section-header {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .guests-header-content {
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    align-items: start;
+    gap: 40px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .guests-section .section-title {
+    color: #fff;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .guests-controls {
+    display: flex;
+    align-items: start;
+    gap: 24px;
+    justify-content: start;
+  }
+  
+  .control-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 56px;
+    border-radius: 100000000px;
+    flex-shrink: 0;
+  }
+  
+  .guests-grid {
+    display: flex;
+    margin-top: 82px;
+    align-items: start;
+    gap: 24px;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  .guest-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    aspect-ratio: 0.686;
+    min-width: 240px;
+    padding: 479px 16px 18px;
+    overflow: hidden;
+    align-items: start;
+    width: 384px;
+  }
+  
+  .guest-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .guest-info {
+    position: relative;
+  }
+  
+  .guest-name {
+    color: rgba(170, 185, 30, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .guest-role {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+  
+  /* Newsletter Section */
+  .newsletter-section {
+    background-color: rgba(245, 245, 245, 1);
+    z-index: 0;
+    display: flex;
+    margin-top: 28px;
+    width: 100%;
+    padding: 180px 120px;
+    flex-direction: column;
+    align-items: stretch;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    justify-content: center;
+  }
+  
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    position: relative;
+    min-height: 580px;
+    width: 100%;
+    padding: 70px 60px;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: center;
+  }
+  
+  .newsletter-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .newsletter-content {
+    position: relative;
+    border-radius: 8px;
+    background-color: rgba(170, 185, 30, 1);
+    display: flex;
+    padding: 74px 80px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .newsletter-text {
+    display: flex;
+    width: 626px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .newsletter-header {
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .newsletter-title {
+    color: #212121;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+  
+  .newsletter-description {
+    color: rgba(29, 31, 37, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .newsletter-form-container {
+    align-self: center;
+    margin-top: 46px;
+    margin-left: 13px;
+    width: 513px;
+    max-width: 100%;
+    font-weight: 400;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    gap: 16px;
+    justify-content: start;
+    flex-wrap: wrap;
+    font-size: 16px;
+  }
+  
+  .newsletter-input {
+    align-self: stretch;
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 16px;
+    border-radius: 2px;
+    background-color: #fff;
+    min-width: 240px;
+    padding: 12px 16px;
+    gap: 8px;
+    color: #505050;
+    border: none;
+    font-family: inherit;
+  }
+  
+  .newsletter-button {
+    align-self: stretch;
+    border-radius: 2px;
+    border: 1px solid #000;
+    background-color: #000;
+    padding: 12px 24px;
+    gap: 8px;
+    color: #fff;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  
+  .newsletter-terms {
+    color: #4f4f4f;
+    font-size: 12px;
+    text-decoration-skip-ink: none;
+    margin-top: 8px;
+  }
+  
+  .terms-link {
+    text-decoration: underline;
+    color: #4f4f4f;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: rgba(17, 17, 17, 1);
+    z-index: 0;
+    display: flex;
+    margin-top: 28px;
+    width: 100%;
+    padding: 160px 120px 96px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: center;
+  }
+  
+  .contact-section {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    gap: 40px 100px;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact-item {
+    line-height: 1.6;
+  }
+  
+  .contact-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .contact-info {
+    color: rgba(170, 185, 30, 1);
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 8px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    margin-top: 96px;
+    width: 100%;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo {
+    align-self: stretch;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family:
+      "Room",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.1;
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  
+  .privacy-link {
+    color: #fff;
+    font-family:
+      "Avenir Next",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 991px) {
+    .top-navbar {
+      max-width: 100%;
+      padding: 16px 20px;
+    }
+  
+    .container {
+      max-width: 100%;
+    }
+  
+    .logo {
+      max-width: 100%;
+    }
+  
+    .nav-cta {
+      max-width: 100%;
+    }
+  
+    .cta-button {
+      padding: 17px 20px;
+    }
+  
+    .hero-section {
+      max-width: 100%;
+      padding: 100px 20px;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .hero-title-container {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 56px;
+    }
+  
+    .hero-title {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 56px;
+    }
+  
+    .episodes-section {
+      max-width: 100%;
+      padding: 100px 20px;
+    }
+  
+    .section-header {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  
+    .section-title {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  
+    .episodes-container {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .episodes-list {
+      max-width: 100%;
+    }
+  
+    .episode {
+      max-width: 100%;
+      padding: 88px 20px;
+    }
+  
+    .episode-column {
+      max-width: 100%;
+    }
+  
+    .episode-content {
+      max-width: 100%;
+    }
+  
+    .episode-text {
+      max-width: 100%;
+    }
+  
+    .episode-title {
+      max-width: 100%;
+    }
+  
+    .episode-description {
+      max-width: 100%;
+    }
+  
+    .load-more-button {
+      padding: 18px 20px;
+    }
+  
+    .platforms-section {
+      max-width: 100%;
+      padding: 100px 20px;
+    }
+  
+    .platforms-container {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .platforms-grid {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .platforms-row {
+      max-width: 100%;
+    }
+  
+    .platforms-row:last-child {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .platform-item {
+      white-space: initial;
+    }
+  
+    .hosts-section {
+      max-width: 100%;
+      padding: 100px 20px;
+    }
+  
+    .hosts-container {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .hosts-section .section-header {
+      font-size: 40px;
+      white-space: initial;
+    }
+  
+    .hosts-grid {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .host-card {
+      padding: 100px 20px 18px;
+    }
+  
+    .host-nested {
+      padding: 100px 20px 18px;
+    }
+  
+    .testimonial-content {
+      max-width: 100%;
+      padding: 100px 20px 25px;
+    }
+  
+    .testimonial-quote {
+      max-width: 100%;
+      padding: 40px 20px;
+    }
+  
+    .testimonial-text {
+      max-width: 100%;
+    }
+  
+    .testimonial-background {
+      max-width: 100%;
+    }
+  
+    .guests-section {
+      max-width: 100%;
+      padding: 100px 20px 100px;
+    }
+  
+    .guests-container {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .guests-section .section-header {
+      max-width: 100%;
+    }
+  
+    .guests-header-content {
+      max-width: 100%;
+    }
+  
+    .guests-section .section-title {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  
+    .guests-grid {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .guest-card {
+      padding: 100px 20px 18px;
+    }
+  
+    .newsletter-section {
+      max-width: 100%;
+      padding: 100px 20px;
+    }
+  
+    .newsletter-container {
+      max-width: 100%;
+      padding: 70px 20px;
+    }
+  
+    .newsletter-content {
+      max-width: 100%;
+      padding: 74px 20px;
+    }
+  
+    .newsletter-text {
+      max-width: 100%;
+    }
+  
+    .newsletter-header {
+      max-width: 100%;
+    }
+  
+    .newsletter-title {
+      max-width: 100%;
+    }
+  
+    .newsletter-description {
+      max-width: 100%;
+    }
+  
+    .newsletter-form-container {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .newsletter-form {
+      max-width: 100%;
+    }
+  
+    .newsletter-button {
+      padding: 12px 20px;
+    }
+  
+    .newsletter-terms {
+      max-width: 100%;
+    }
+  
+    .footer {
+      max-width: 100%;
+      padding: 100px 20px;
+    }
+  
+    .contact-section {
+      max-width: 100%;
+    }
+  
+    .footer-bottom {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .footer-logo {
+      max-width: 100%;
+    }
+  }
+  
